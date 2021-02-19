@@ -9,7 +9,7 @@ pico_sdk_init()
 
 add_executable(
   main
-  main.cpp
+  main.c
 )
 
 pico_enable_stdio_uart(main 1)
