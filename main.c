@@ -42,7 +42,6 @@ void recover_from_sleep(uint scb_orig, uint clock0_orig, uint clock1_orig){
 
     //Re-enable ring Oscillator control
     rosc_write(&rosc_hw->ctrl, ROSC_CTRL_ENABLE_BITS);
-    rosc_write(&rosc_hw->ctrl, ROSC_CTRL_ENABLE_LSB);
 
     //reset procs back to default
     scb_hw->scr = scb_orig;
